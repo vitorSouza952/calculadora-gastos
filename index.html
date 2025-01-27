@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Gastos</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/scripts.js" defer></script>
+</head>
+<body>
+    <section class="area-calculadora">
+        <h1>Calculadora de Gastos</h1>
+        <form id="form">
+            <div class="area-entrada">
+                <label for="aluguel">
+                    Aluguel: <span>*</span>
+                </label>
+                <input type="number" name="aluguel" id="aluguel" placeholder="Digite o valor do aluguel" min="0" step=".01" required>
+            </div>
+            <div class="area-entrada">
+                <label for="alimentacao">
+                    Alimentação: <span>*</span>
+                </label>
+                <input type="number" name="alimentacao" id="alimentacao" placeholder="Digite o valor da alimentação" min="0" step=".01" required>
+            </div>
+            <div class="area-entrada">
+                <label for="transporte">
+                    Transporte: <span>*</span>
+                </label>
+                <input type="number" name="transporte" id="transporte" placeholder="Digite o valor do transporte" min="0" step=".01" required>
+            </div>
+            <div class="area-entrada">
+                <label for="outros-gastos">
+                    Outros gastos: <span>*</span>
+                </label>
+                <input type="number" name="outros-gastos" id="outros-gastos" placeholder="Digite os outros gastos" min="0" step=".01" required>
+            </div>
+            <input type="submit" value="Calcular">
+        </form>
+    </section>
+    <div id="area-modal" class="area-modal ocultado">
+        <section id="modal" class="modal ocultado">
+            <h2>Atenção:</h2>
+            <p id="msg-modal"></p>
+            <button type="button" id="botao-fechar-modal">Fechar</button>
+        </section>
+    </div>
+</body>
+</html>
